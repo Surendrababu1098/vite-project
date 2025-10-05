@@ -1,0 +1,77 @@
+/* Reports Page Container */
+.reports-container {
+  flex: 1;
+  padding: 40px;
+  background-color: #f4f7fa;
+  min-height: 100vh;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page Header */
+.reports-container h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #009CA5;
+  font-weight: bold;
+}
+
+/* Complaints Table */
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.complaints-table th,
+.complaints-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 15px;
+  color: #333;
+}
+
+.complaints-table th {
+  background-color: #009CA5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.complaints-table tr:hover {
+  background-color: #f1f9fa;
+}
+
+/* Complaint Status */
+.complaints-table td.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.complaints-table td.status.Pending {
+  color: #e67e22;
+}
+
+.complaints-table td.status.InProgress {
+  color: #f39c12;
+}
+
+.complaints-table td.status.Resolved {
+  color: #27ae60;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .complaints-table {
+    font-size: 13px;
+  }
+
+  .complaints-table th,
+  .complaints-table td {
+    padding: 10px;
+  }
+}
