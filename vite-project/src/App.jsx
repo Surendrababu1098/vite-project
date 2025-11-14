@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/login";
 import Dashboard from "./pages/Dashboard";
-import CustomerPage from "./pages/CustomerPage";
-import Reports from "./pages/Reports";
+import EmployeeDashboard from "./pages/EmployeeDashboard";
+import Customer from "./pages/CustomerPage";
+import Reports from "./pages/Reports"; 
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/customer" element={<CustomerPage />} />
-        <Route path="/reports" element={<Reports />} />
+        <Route path="/customer" element={<Customer />} />
+        <Route path="/employee" element={<EmployeeDashboard />} />
+        <Route path="/reports" element={<Reports />} /> {/* ✅ Added route */}
       </Routes>
     </Router>
   );

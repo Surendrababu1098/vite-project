@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f7fa;
-  color: #333;
+  color: #191818;
 }
 
 /* =========================
@@ -20,53 +20,102 @@ body {
 
 /* Sidebar */
 .sidebar {
-  width: 240px;
+  width: 260px;
   background-color: #009CA5;
   color: white;
   padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar h2 {
-  margin: 0 0 30px;
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
+/* Sidebar Menu */
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar li {
-  margin: 20px 0;
-  cursor: pointer;
+  margin: 18px 0;
 }
 
-.sidebar li:hover {
-  color: #e0f7fa;
+.sidebar li:first-child {
+  margin-bottom: 30px;
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sidebar li a.active {
+  background-color: #007B8A;
   font-weight: bold;
+  border-left: 4px solid #ffffff;
 }
 
-/* Main */
+.sidebar li a:hover {
+  background-color: #007B8A;
+}
+
+/* =========================
+   Main Content
+========================= */
 .dashboard-main {
+  margin-left: 260px;
   flex: 1;
   padding: 40px;
+  background-color: #f4f7fa;
   overflow-y: auto;
 }
 
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 header h1 {
-  margin: 0;
   font-size: 32px;
   color: #009CA5;
 }
 
-header p {
-  margin: 5px 0 30px;
-  color: #555;
+header .action-btn {
+  background-color: #009CA5;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-/* Stats Cards */
+header .action-btn:hover {
+  background-color: #007B8A;
+}
+
+/* =========================
+   Stats Cards
+========================= */
 .stats-cards {
   display: flex;
   gap: 20px;
@@ -76,20 +125,30 @@ header p {
 
 .card {
   flex: 1;
-  min-width: 200px;
+  min-width: 220px;
   background: linear-gradient(135deg, #00b3b3, #009CA5);
   color: white;
   padding: 25px 20px;
   border-radius: 12px;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
 }
 
-/* Problem Form */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   Complaint Form Section
+========================= */
 .problem-form {
   background-color: white;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
@@ -99,62 +158,243 @@ header p {
   font-size: 24px;
 }
 
-/* Upload Boxes */
-.upload-boxes {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.form-group {
+  margin-bottom: 20px;
 }
 
-.upload-card {
-  flex: 1;
-  min-width: 250px;
-  background-color: #e0f7fa;
-  border: 1px solid #009CA5;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
-.upload-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.upload-card h3 {
-  margin-bottom: 16px;
-  color: #009CA5;
-  font-size: 18px;
-}
-
-.upload-card input[type="file"] {
-  margin-bottom: 12px;
-  padding: 8px;
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  width: 100%;
+  font-size: 14px;
 }
 
-.upload-card button {
-  padding: 10px 16px;
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-actions button {
   background-color: #009CA5;
   color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
 }
 
-.upload-card button:hover {
+.form-actions button:hover {
   background-color: #007B8A;
 }
 
-/* Responsive */
+/* =========================
+   Reports Section
+========================= */
+.reports-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reports-section h2 {
+  color: #009CA5;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.report-card {
+  background-color: #e0f7fa;
+  border-left: 6px solid #009CA5;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.report-header h3 {
+  margin: 0;
+  color: #007B8A;
+}
+
+.issue-text {
+  font-size: 0.95rem;
+  color: #060606;
+  margin: 10px 0 15px;
+}
+
+.report-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #111010;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background-color: #ffe0e0;
+  color: #d32f2f;
+}
+
+.status-badge.resolved {
+  background-color: #e0f2f1;
+  color: #00796b;
+}
+
+.status-badge.in-progress {
+  background-color: #fff4e0;
+  color: #f57c00;
+}
+
+/* =========================
+   Modal Overlay & Content
+========================= */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h2 {
+  color: #009CA5;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  background-color: #009CA5;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-content button:hover {
+  background-color: #007B8A;
+}
+
+/* =========================
+   Progress Line
+========================= */
+.progress-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  position: relative;
+}
+
+.progress-line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #d1d5db;
+  z-index: 0;
+}
+
+.dot {
+  position: relative;
+  background-color: #d1d5db;
+  color: #374151;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #009CA5;
+  color: white;
+}
+
+/* =========================
+   Responsive
+========================= */
 @media screen and (max-width: 768px) {
-  .upload-boxes {
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+  }
+
+  .dashboard-main {
+    margin-left: 200px;
+    padding: 20px;
+  }
+
+  .stats-cards {
     flex-direction: column;
+  }
+
+  .reports-grid {
+    grid-template-columns: 1fr;
   }
 }

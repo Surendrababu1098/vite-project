@@ -1,0 +1,711 @@
+{
+  "employees": [
+    {
+      "e_id": "E001",
+      "name": "Employee_1",
+      "skill": "Software",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E002",
+      "name": "Employee_2",
+      "skill": "Mechanical",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E003",
+      "name": "Employee_3",
+      "skill": "Mechanical",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E004",
+      "name": "Employee_4",
+      "skill": "Mechanical",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E005",
+      "name": "Employee_5",
+      "skill": "Networking",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E006",
+      "name": "Employee_6",
+      "skill": "Software",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E007",
+      "name": "Employee_7",
+      "skill": "HVAC",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E008",
+      "name": "Employee_8",
+      "skill": "Mechanical",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E009",
+      "name": "Employee_9",
+      "skill": "Networking",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E010",
+      "name": "Employee_10",
+      "skill": "Electrical",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E011",
+      "name": "Employee_11",
+      "skill": "HVAC",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E012",
+      "name": "Employee_12",
+      "skill": "Networking",
+      "problem_occured": "Connectivity Issue",
+      "availability": "No"
+    },
+    {
+      "e_id": "E013",
+      "name": "Employee_13",
+      "skill": "Software",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E014",
+      "name": "Employee_14",
+      "skill": "Software",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E015",
+      "name": "Employee_15",
+      "skill": "Networking",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E016",
+      "name": "Employee_16",
+      "skill": "Networking",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E017",
+      "name": "Employee_17",
+      "skill": "Networking",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E018",
+      "name": "Employee_18",
+      "skill": "Mechanical",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E019",
+      "name": "Employee_19",
+      "skill": "Software",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E020",
+      "name": "Employee_20",
+      "skill": "Electrical",
+      "problem_occured": "Power Failure",
+      "availability": "No"
+    },
+    {
+      "e_id": "E021",
+      "name": "Employee_21",
+      "skill": "Networking",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E022",
+      "name": "Employee_22",
+      "skill": "Mechanical",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E023",
+      "name": "Employee_23",
+      "skill": "Electrical",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E024",
+      "name": "Employee_24",
+      "skill": "Electrical",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E025",
+      "name": "Employee_25",
+      "skill": "Mechanical",
+      "problem_occured": "Power Failure",
+      "availability": "No"
+    },
+    {
+      "e_id": "E026",
+      "name": "Employee_26",
+      "skill": "HVAC",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E027",
+      "name": "Employee_27",
+      "skill": "Networking",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E028",
+      "name": "Employee_28",
+      "skill": "Mechanical",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E029",
+      "name": "Employee_29",
+      "skill": "Electrical",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E030",
+      "name": "Employee_30",
+      "skill": "Electrical",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E031",
+      "name": "Employee_31",
+      "skill": "HVAC",
+      "problem_occured": "Power Failure",
+      "availability": "No"
+    },
+    {
+      "e_id": "E032",
+      "name": "Employee_32",
+      "skill": "HVAC",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E033",
+      "name": "Employee_33",
+      "skill": "Software",
+      "problem_occured": "Connectivity Issue",
+      "availability": "No"
+    },
+    {
+      "e_id": "E034",
+      "name": "Employee_34",
+      "skill": "Electrical",
+      "problem_occured": "Power Failure",
+      "availability": "No"
+    },
+    {
+      "e_id": "E035",
+      "name": "Employee_35",
+      "skill": "Mechanical",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E036",
+      "name": "Employee_36",
+      "skill": "Networking",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E037",
+      "name": "Employee_37",
+      "skill": "HVAC",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E038",
+      "name": "Employee_38",
+      "skill": "HVAC",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E039",
+      "name": "Employee_39",
+      "skill": "Networking",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E040",
+      "name": "Employee_40",
+      "skill": "Software",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E041",
+      "name": "Employee_41",
+      "skill": "Software",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E042",
+      "name": "Employee_42",
+      "skill": "Mechanical",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E043",
+      "name": "Employee_43",
+      "skill": "Networking",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E044",
+      "name": "Employee_44",
+      "skill": "Mechanical",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E045",
+      "name": "Employee_45",
+      "skill": "HVAC",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E046",
+      "name": "Employee_46",
+      "skill": "Networking",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E047",
+      "name": "Employee_47",
+      "skill": "Networking",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E048",
+      "name": "Employee_48",
+      "skill": "Networking",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E049",
+      "name": "Employee_49",
+      "skill": "Electrical",
+      "problem_occured": "Connectivity Issue",
+      "availability": "No"
+    },
+    {
+      "e_id": "E050",
+      "name": "Employee_50",
+      "skill": "Mechanical",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E051",
+      "name": "Employee_51",
+      "skill": "Electrical",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E052",
+      "name": "Employee_52",
+      "skill": "Mechanical",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E053",
+      "name": "Employee_53",
+      "skill": "Mechanical",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E054",
+      "name": "Employee_54",
+      "skill": "Electrical",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E055",
+      "name": "Employee_55",
+      "skill": "Software",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E056",
+      "name": "Employee_56",
+      "skill": "HVAC",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E057",
+      "name": "Employee_57",
+      "skill": "Networking",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E058",
+      "name": "Employee_58",
+      "skill": "HVAC",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E059",
+      "name": "Employee_59",
+      "skill": "Networking",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E060",
+      "name": "Employee_60",
+      "skill": "Networking",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E061",
+      "name": "Employee_61",
+      "skill": "Mechanical",
+      "problem_occured": "Power Failure",
+      "availability": "No"
+    },
+    {
+      "e_id": "E062",
+      "name": "Employee_62",
+      "skill": "Networking",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E063",
+      "name": "Employee_63",
+      "skill": "Electrical",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E064",
+      "name": "Employee_64",
+      "skill": "Electrical",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E065",
+      "name": "Employee_65",
+      "skill": "Mechanical",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E066",
+      "name": "Employee_66",
+      "skill": "Networking",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E067",
+      "name": "Employee_67",
+      "skill": "HVAC",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E068",
+      "name": "Employee_68",
+      "skill": "Networking",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E069",
+      "name": "Employee_69",
+      "skill": "Software",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E070",
+      "name": "Employee_70",
+      "skill": "Electrical",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E071",
+      "name": "Employee_71",
+      "skill": "Mechanical",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E072",
+      "name": "Employee_72",
+      "skill": "Software",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E073",
+      "name": "Employee_73",
+      "skill": "Electrical",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E074",
+      "name": "Employee_74",
+      "skill": "HVAC",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E075",
+      "name": "Employee_75",
+      "skill": "HVAC",
+      "problem_occured": "Power Failure",
+      "availability": "No"
+    },
+    {
+      "e_id": "E076",
+      "name": "Employee_76",
+      "skill": "Networking",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E077",
+      "name": "Employee_77",
+      "skill": "Mechanical",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E078",
+      "name": "Employee_78",
+      "skill": "Mechanical",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E079",
+      "name": "Employee_79",
+      "skill": "Electrical",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E080",
+      "name": "Employee_80",
+      "skill": "Electrical",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E081",
+      "name": "Employee_81",
+      "skill": "Electrical",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E082",
+      "name": "Employee_82",
+      "skill": "Networking",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E083",
+      "name": "Employee_83",
+      "skill": "Mechanical",
+      "problem_occured": "Software Bug",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E084",
+      "name": "Employee_84",
+      "skill": "Networking",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E085",
+      "name": "Employee_85",
+      "skill": "Software",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E086",
+      "name": "Employee_86",
+      "skill": "Networking",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E087",
+      "name": "Employee_87",
+      "skill": "HVAC",
+      "problem_occured": "Connectivity Issue",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E088",
+      "name": "Employee_88",
+      "skill": "HVAC",
+      "problem_occured": "Software Bug",
+      "availability": "No"
+    },
+    {
+      "e_id": "E089",
+      "name": "Employee_89",
+      "skill": "HVAC",
+      "problem_occured": "Overheating",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E090",
+      "name": "Employee_90",
+      "skill": "Networking",
+      "problem_occured": "Overheating",
+      "availability": "No"
+    },
+    {
+      "e_id": "E091",
+      "name": "Employee_91",
+      "skill": "Mechanical",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E092",
+      "name": "Employee_92",
+      "skill": "Networking",
+      "problem_occured": "Connectivity Issue",
+      "availability": "No"
+    },
+    {
+      "e_id": "E093",
+      "name": "Employee_93",
+      "skill": "Mechanical",
+      "problem_occured": "Power Failure",
+      "availability": "No"
+    },
+    {
+      "e_id": "E094",
+      "name": "Employee_94",
+      "skill": "Electrical",
+      "problem_occured": "Connectivity Issue",
+      "availability": "No"
+    },
+    {
+      "e_id": "E095",
+      "name": "Employee_95",
+      "skill": "Software",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E096",
+      "name": "Employee_96",
+      "skill": "Networking",
+      "problem_occured": "Leakage",
+      "availability": "No"
+    },
+    {
+      "e_id": "E097",
+      "name": "Employee_97",
+      "skill": "Mechanical",
+      "problem_occured": "Power Failure",
+      "availability": "No"
+    },
+    {
+      "e_id": "E098",
+      "name": "Employee_98",
+      "skill": "Software",
+      "problem_occured": "Leakage",
+      "availability": "Yes"
+    },
+    {
+      "e_id": "E099",
+      "name": "Employee_99",
+      "skill": "Networking",
+      "problem_occured": "Connectivity Issue",
+      "availability": "No"
+    },
+    {
+      "e_id": "E100",
+      "name": "Employee_100",
+      "skill": "HVAC",
+      "problem_occured": "Power Failure",
+      "availability": "Yes"
+    }
+  ],
+  "metadata": {
+    "total_employees": 100,
+    "skills": ["Software", "Mechanical", "Networking", "HVAC", "Electrical"],
+    "problem_types": ["Software Bug", "Overheating", "Leakage", "Connectivity Issue", "Power Failure"],
+    "availability_options": ["Yes", "No"],
+    "created_date": "2025-10-06"
+  }
+}

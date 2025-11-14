@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard - Upload CSVs v2.0</title>
+  <style>
+    body{font-family:Arial, sans-serif;background:#eef2f6;padding:24px}
+    .wrap{max-width:900px;margin:24px auto;background:white;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .tabs{display:flex;gap:8px}
+    .tab{padding:10px 14px;border-radius:8px;border:1px solid #ddd;cursor:pointer;background:#f7f9fc}
+    .tab.active{background:#007BFF;color:white}
+    .panel{margin-top:16px}
+    input[type=file]{display:block;margin:8px 0}
+    button{padding:8px 12px;border-radius:6px;border:none;background:#28a745;color:white;cursor:pointer}
+    pre{background:#f8f9fb;padding:12px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h2>Admin Dashboard</h2>
+    <div class="tabs">
+      <div class="tab active" data-tab="edges" onclick="showTab('edges')">Upload Edges CSV</div>
+      <div class="tab" data-tab="customers" onclick="showTab('customers')">Upload Customers CSV</div>
+      <div class="tab" data-tab="employees" onclick="showTab('employees')">Upload Employees CSV</div>
+    </div>
+
+    <div id="panels">
+      <div class="panel" id="panel-edges">
+        <h3>Edges (edges.csv)</h3>
+        <input type="file" id="file-edges" accept=".csv" />
+        <button onclick="upload('edges')">Upload Edges</button>
+        <div id="res-edges"></div>
+      </div>
+
+      <div class="panel" id="panel-customers" style="display:none">
+        <h3>Customers (customers_100.csv)</h3>
+        <input type="file" id="file-customers" accept=".csv" />
+        <button onclick="upload('customers')">Upload Customers</button>
+        <div id="res-customers"></div>
+      </div>
+
+      <div class="panel" id="panel-employees" style="display:none">
+        <h3>Employees (employees_100.csv)</h3>
+        <input type="file" id="file-employees" accept=".csv" />
+        <button onclick="upload('employees')">Upload Employees</button>
+        <div id="res-employees"></div>
+      </div>
+    </div>
+
+    <hr />
+    <h4>Saved files on server</h4>
+    <div id="saved"></div>
+  </div>
+
+  <script>
+    function showTab(t){
+      document.querySelectorAll('.tab').forEach(el=>el.classList.remove('active'));
+      document.querySelectorAll('.panel').forEach(el=>el.style.display='none');
+      document.querySelector('.tab[data-tab="'+t+'"]').classList.add('active');
+      document.getElementById('panel-'+t).style.display='block';
+    }
+
+    async function upload(type){
+      const input = document.getElementById('file-'+type);
+      if(!input.files.length){ document.getElementById('res-'+type).innerHTML = '<p style="color:orange">Select a file first.</p>'; return }
+      const f = input.files[0];
+      const fd = new FormData();
+      fd.append(type, f);
+      try{
+        document.getElementById('res-'+type).innerHTML = '<p style="color:blue">⏳ Uploading file...</p>';
+        const res = await fetch('http://4.240.91.148:5073/upload_files', { method:'POST', body: fd });
+        const data = await res.json();
+        if(!res.ok){ document.getElementById('res-'+type).innerHTML = `<p style="color:red">❌ ${data.error}</p>`; return }
+        
+        // Format success message nicely
+        const fileName = Object.values(data.saved)[0] || f.name;
+        const uploadTime = new Date().toLocaleTimeString();
+        document.getElementById('res-'+type).innerHTML = `
+          <div style="background:#d4edda;border:1px solid #c3e6cb;color:#155724;padding:12px;border-radius:6px;margin:8px 0">
+            <strong>✅ Upload Successful!</strong><br>
+            📁 File: <code>${fileName}</code><br>
+            🕒 Time: ${uploadTime}<br>
+            📊 Size: ${(f.size/1024).toFixed(1)} KB
+          </div>
+        `;
+        loadSaved()
+      }catch(e){ document.getElementById('res-'+type).innerHTML = `<p style="color:red">❌ Error: ${e.message}</p>` }
+    }
+
+    async function loadSaved(){
+      // try to read files list (we don't have an endpoint, so show a static note)
+      document.getElementById('saved').innerHTML = '<p>Uploaded files are saved to backend folder (backend/). Refresh this page after uploads.</p>';
+    }
+
+    loadSaved();
+  </script>
+</body>
+</html>

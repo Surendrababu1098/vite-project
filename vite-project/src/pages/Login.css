@@ -1,106 +1,109 @@
-/* Full-screen container */
-.login-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* Full-screen container */
+  .login-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-/* Background video */
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-}
+  /* Background video */
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
 
-/* Centered login card */
+  /* Centered login card */
+  /* Centered login card - bigger and more professional */
 .login-card {
-  position: relative; /* changed from absolute to relative */
+  position: relative;
   background: rgba(7, 7, 7, 0.85);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  width: 300px;
+  padding: 60px; /* Increased padding for spacious look */
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  width: 400px; /* Increased width */
   text-align: center;
   z-index: 1;
+  backdrop-filter: blur(6px); /* Adds a modern glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for premium feel */
 }
 
-/* Brand styling */
-.brand {
-  font-size: 50px;
-  font-weight: bold;
-  color: turquoise;
-  margin-bottom: 20px;
-}
+  /* Brand styling */
+  .brand {
+    font-size: 50px;
+    font-weight: bold;
+    color: turquoise;
+    margin-bottom: 20px;
+  }
 
-/* Input boxes */
-.input-box {
-  width: 80%;
-  padding: 10px;
-  margin: 10px auto;
-  display: block;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
+  /* Input boxes */
+  .input-box {
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
 
-/* Buttons */
-.login-btn {
-  width: 60%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #009CA5;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
+  /* Buttons */
+  .login-btn {
+    width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009CA5;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+  }
 
-.login-btn:hover {
-  background-color: #007B8A;
-}
-/* Signup button - same style as login */
-.signup-btn {
-  width: 60%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #009CA5;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
+  .login-btn:hover {
+    background-color: #007B8A;
+  }
+  /* Signup button - same style as login */
+  .signup-btn {
+    width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #009CA5;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
 
-.signup-btn:hover {
-  background-color: #007B8A;
-}
+  .signup-btn:hover {
+    background-color: #007B8A;
+  }
 
-/* Forgot Password - small text right-aligned */
-.forgot-container {
-  margin-top: 8px;
-  display: flex;
-  justify-content: flex-end;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
+  /* Forgot Password - small text right-aligned */
+  .forgot-container {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.forgot-btn {
-  font-size: 13px;
-  color: #009CA5;
-  cursor: pointer;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
+  .forgot-btn {
+    font-size: 13px;
+    color: #009CA5;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
 
-.forgot-btn:hover {
-  color: #007B8A;
-}
+  .forgot-btn:hover {
+    color: #007B8A;
+  }

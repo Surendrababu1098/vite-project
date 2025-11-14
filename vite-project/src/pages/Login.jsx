@@ -13,8 +13,12 @@ function Login() {
       navigate("/dashboard");
     } else if (username === "customer" && password === "customer123") {
       navigate("/customer", { state: { name: "Customer" } });
+    } else if (username === "employee" && password === "employee123") {
+      navigate("/employee", { state: { name: "Employee" } });
     } else {
-      alert("Invalid credentials ❌ Try admin/admin123 or customer/customer123");
+      alert(
+        "Invalid credentials ❌ Try admin/admin123, customer/customer123, or employee/employee123"
+      );
     }
   };
 
@@ -43,7 +47,9 @@ function Login() {
             className="input-box"
             required
           />
-          <button type="submit" className="login-btn">Login</button>
+          <button type="submit" className="login-btn">
+            Login
+          </button>
         </form>
 
         {/* Sign Up Button */}
